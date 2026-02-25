@@ -1,74 +1,88 @@
-# MLflow-Basic-Demo
+# MLflow Basic Demo – Experiment Tracking with ElasticNet
 
+## 📌 Overview
 
+This project demonstrates how to use **MLflow** to track machine learning experiments.
 
-## For Dagshub:
+An ElasticNet regression model is trained and evaluated, and key parameters and metrics are logged using MLflow’s tracking system. The results can be visualized and compared using the MLflow UI.
 
-MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/MLflow-Basic-Demo.mlflow \
-MLFLOW_TRACKING_USERNAME=entbappy \
-MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
-python script.py
+---
 
+## 🚀 Features
 
+- Train ElasticNet regression model
+- Log hyperparameters (alpha, l1_ratio)
+- Log evaluation metrics (RMSE, MAE, R²)
+- Automatic experiment tracking
+- MLflow UI visualization
+- Compare multiple runs
 
-```bash
+---
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/MLflow-Basic-Demo.mlflow
+## 🛠 Tech Stack
 
-export MLFLOW_TRACKING_USERNAME=entbappy 
+- Python 3.10
+- MLflow 2.2.2
+- Scikit-learn
+- Pandas
+- NumPy
+- Conda (Environment Management)
 
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
+---
 
+## 📂 Project Structure
 
 ```
-
-
-# MLflow on AWS
-
-## MLflow on AWS Setup:
-
-1. Login to AWS console.
-2. Create IAM user with AdministratorAccess
-3. Export the credentials in your AWS CLI by running "aws configure"
-4. Create a s3 bucket
-5. Create EC2 machine (Ubuntu) & add Security groups 5000 port
-
-Run the following command on EC2 machine
-```bash
-sudo apt update
-
-sudo apt install python3-pip
-
-sudo apt install pipenv
-
-sudo apt install virtualenv
-
-mkdir mlflow
-
-cd mlflow
-
-pipenv install mlflow
-
-pipenv install awscli
-
-pipenv install boto3
-
-pipenv shell
-
-
-## Then set aws credentials
-aws configure
-
-
-#Finally 
-mlflow server -h 0.0.0.0 --default-artifact-root s3://mlflow-tracking-buc25 --allowed-hosts *
-
-#open Public IPv4 DNS to the port 5000
-
-
-#set uri in your local terminal and in your code 
-export MLFLOW_TRACKING_URI=http://ec2-54-147-36-34.compute-1.amazonaws.com:5000/
+MLflow-Basic-Demo/
+    argv_exp.py
+    example.py
+    LICENSE
+    README.md
+    requirements.txt
+    mlruns/
+        ...
 ```
 
+---
 
+## 📌 Additional Notes
+
+### For Dagshub
+
+```bash
+export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/MLflow-Basic-Dem# MLflow Basic Demo –TR
+## 📌 Overview
+
+This project demonstrates how to use **824
+This project deac
+An ElasticNet regression model is trained and evaluated, and key parameters and metr2. 
+---
+
+## 🚀 Features
+
+- Train ElasticNet regression model
+- Log hyperparameters (alpha, l1_ratio)
+- Log evaluation metrics (RMSE, MAE, R²)
+- Automatic experiment tracking
+- MLflow UI visualiza
+``
+#ash
+- Train Elastie
+s- Log hyperparameters (alpha, l1_r v- Log evaluation metrics (RMSE, MAE, Rpe- Automatic experiment tracking
+- MLflowel- MLflow UI visualization
+- Co -- Compare multiple runs
+t-
+---
+
+## 🛠 Tech Staur-bucke
+- Python 3.10
+- d-h- MLflow 2.2Ac- Scikit-learow- Pandas
+- NuC2- NumPyce- Condli
+---
+
+## 📂 Project Structure`ML
+#OW_
+```
+MLflow-Basic-Demngly iMLyo    argv_exp.py
+ ent.
 
